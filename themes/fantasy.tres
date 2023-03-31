@@ -1,0 +1,50 @@
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://b13q1bu20gqmn"]
+
+[ext_resource type="FontFile" uid="uid://doc1c73pbblwl" path="res://themes/fonts/immortal/IMMORTAL.ttf" id="1_dpa36"]
+[ext_resource type="Texture2D" uid="uid://rv3o7lmppn6j" path="res://img/fantasyui/svg/button_hover.svg" id="1_ef0ji"]
+[ext_resource type="Texture2D" uid="uid://bpjv8k1jxi6oc" path="res://img/fantasyui/svg/header_panel.svg" id="1_led1u"]
+[ext_resource type="Texture2D" uid="uid://c1lat85y4b1yn" path="res://img/fantasyui/svg/button_normal.svg" id="1_llrwd"]
+[ext_resource type="Texture2D" uid="uid://cvw5ysw8370hl" path="res://img/fantasyui/svg/panel.svg" id="3_nv6aa"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bjg7u"]
+texture = ExtResource("1_ef0ji")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y4x6u"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+texture = ExtResource("1_llrwd")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n0yb4"]
+content_margin_left = 165.0
+content_margin_top = 25.0
+content_margin_right = 165.0
+content_margin_bottom = 50.0
+texture = ExtResource("1_led1u")
+texture_margin_left = 190.0
+texture_margin_right = 190.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lk63t"]
+content_margin_left = 60.0
+content_margin_right = 60.0
+content_margin_bottom = 60.0
+texture = ExtResource("3_nv6aa")
+expand_margin_top = 60.0
+
+[resource]
+default_font = ExtResource("1_dpa36")
+default_font_size = 30
+Button/colors/font_color = Color(0.690196, 0.427451, 0.180392, 1)
+Button/colors/font_hover_color = Color(0.729412, 0.509804, 0.133333, 1)
+Button/styles/hover = SubResource("StyleBoxTexture_bjg7u")
+Button/styles/normal = SubResource("StyleBoxTexture_y4x6u")
+Label/colors/font_color = Color(0.129412, 0.129412, 0.129412, 1)
+Label/font_sizes/font_size = 48
+Label/fonts/font = ExtResource("1_dpa36")
+Label/styles/normal = SubResource("StyleBoxTexture_n0yb4")
+MarginContainer/constants/margin_bottom = 30
+MarginContainer/constants/margin_left = 10
+MarginContainer/constants/margin_right = 10
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_lk63t")
+RichTextLabel/colors/default_color = Color(0.121569, 0.0705882, 0.0392157, 1)
